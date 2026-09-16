@@ -15,6 +15,10 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Inherit from X00TD device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
+
+WITH_GMS := false
+BUILD_BCR := false
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := lineage_X00TD
 PRODUCT_DEVICE := X00TD
