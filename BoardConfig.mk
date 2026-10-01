@@ -20,10 +20,8 @@ DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
 # Kernel
 TARGET_KERNEL_CONFIG := \
-    vendor/sdm660-perf_defconfig \
-    vendor/common.config \
+    vendor/asus/X00TD_defconfig \
     vendor/debugfs.config \
-    vendor/X00TD.config \
     vendor/extra/ksu.config
 
 # Inherit the proprietary files
