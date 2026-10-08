@@ -15,7 +15,9 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Inherit from X00TD device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
-TARGET_SUPPORTS_BLUR := false
+TARGET_ENABLE_BLUR := false
+WITH_GMS := true
+TARGET_USES_PICO_GAPPS := true
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := lineage_X00TD
